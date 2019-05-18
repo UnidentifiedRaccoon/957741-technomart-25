@@ -10,7 +10,7 @@
 <body>
   <header class="site-header">
     <div class="header-top">
-      <a class="site-logo"><img src="img/header-logo.png" alt="Логотип «Техномарта»" width="220" height="47"></a>
+      <a class="site-logo"><img src="img/site-header-logo.png" alt="Логотип «Техномарта»" width="220" height="47"></a>
       <!-- Здесь будет форма поиска по сайту -->
       <p class="header-top-btns">
         <a class="main-bookmarks-btn" href="#">Закладки: 0</a>
@@ -48,6 +48,149 @@
 
   <main class="site-content">
     <!-- Здесь будут остальные разделы -->
+    <section class="promo">
+      <!-- Попытка именовать классы по БЭМ'у -->
+      <h2 class="visually-hidden">Промо раздел</h2>
+      <ul class="promo-list">
+        <li class="promo-item">
+          <h3 class="promo-item__title">Материалы</h3>
+          <a class="promo-item__link" href="#">На любой вкус</a>
+        </li>
+        <li class="promo-item">
+          <h3 class="promo-item__title">Инструменты</h3>
+          <a class="promo-item__link" href="#">На все случаи</a>
+        </li>
+        <li class="promo-item">
+          <h3 class="promo-item__title">Техника</h3>
+          <a class="promo-item__link" href="#">Для стройки</a>
+        </li>
+        <li>
+          <!-- Здесь будет слайдер -->
+        </li>
+        <li class="promo-item">
+          <h3 class="promo-item__title">Скидки 50%</h3>
+          <a class="promo-item__link" href="#">На 350 товаров</a>
+        </li>
+        <li class="promo-item">
+          <h3 class="promo-item__title">Доставка</h3>
+          <a class="promo-item__link" href="#">Бесплатно</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="popular-products">
+      <h2 class="popular-products__title">Популярные продукты</h2>
+      <ul class="popular-products__list">
+        <li class="popular-products__item products-item">
+          <div class="products-item__img">
+            <img src="img/bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
+          </div>
+          <h3 class="products-item__title">Перфоратор BOSCH BFG 9000</h3>
+          <p class="products-item__old-price">32500 P.</p>
+          <p class="products-item__price">25500 P.</p>
+          <p class="products-item__action">
+            <a class="products-item__basket-btn" href="#">Купить</a>
+            <a class="products-item__bookmarks-btn" href="#">В закладки</a>
+          </p>
+        </li>
+        <!-- Товар №2 -->
+        <li class="popular-products__item products-item">
+          <div class="products-item__img">
+            <img src="img/bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+          </div>
+          <h3 class="products-item__title">Перфоратор BOSCH BFG 3000</h3>
+          <p class="products-item__old-price">22500 P.</p>
+          <p class="products-item__price">15500 P.</p>
+          <p class="products-item__action">
+            <a class="products-item__basket-btn" href="#">Купить</a>
+            <a class="products-item__bookmarks-btn" href="#">В закладки</a>
+          </p>
+        </li>
+        <!-- Товар №3 -->
+        <li class="popular-products__item products-item">
+          <div class="products-item__img">
+            <img src="img/bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+          </div>
+          <h3 class="products-item__title">Перфоратор BOSCH BFG 6000</h3>
+          <p class="products-item__old-price">30500 P.</p>
+          <p class="products-item__price">25500 P.</p>
+          <p class="products-item__action">
+            <a class="products-item__basket-btn" href="#">Купить</a>
+            <a class="products-item__bookmarks-btn" href="#">В закладки</a>
+          </p>
+        </li>
+        <!-- Товар №4 -->
+        <li class="popular-products__item products-item">
+          <div class="products-item__img">
+            <img src="img/bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+          </div>
+          <h3 class="products-item__title">Перфоратор BOSCH BFG 2000</h3>
+          <p class="products-item__old-price"></p>
+          <p class="products-item__price">12500 P.</p>
+          <p class="products-item__action">
+            <a class="products-item__basket-btn" href="#">Купить</a>
+            <a class="products-item__bookmarks-btn" href="#">В закладки</a>
+          </p>
+        </li>
+      </ul>
+      <a class="popular-products__link more-info-link" href="#">Все популярные товары</a>
+    </section>
+
+    <section class="popular-brands">
+      <h2 class="popular-brands__title">Популярные производители</h2>
+      <ul class="popular-brands__list">
+        <!-- Производитель №1 -->
+        <a class="popular-brands__link" href="#" title="Продукция компании BOSCH" aria-label="Ведет на страницу с продукцией компании BOSCH">
+          <li class="popular-brands__item">
+            <img src="img/logo-bosch.png" alt="Логотип компании BOSCH" width="126" height="37">
+          </li>
+        </a>
+        <!-- Производитель №2 -->
+        <a class="popular-brands__link" href="#" title="Продукция компании Makita" aria-label="Ведет на страницу с продукцией компании Makita">
+          <li class="popular-brands__item">
+            <img src="img/logo-makita.png" alt="Логотип компании Makita" width="123" height="40">
+          </li>
+        </a>
+        <!-- Производитель №3 -->
+        <a class="popular-brands__link" href="#" title="Продукция компании DeWALT" aria-label="Ведет на страницу с продукцией компании DeWALT">
+          <li class="popular-brands__item">
+            <img src="img/logo-dewalt.png" alt="Логотип компании DeWALT" width="146" height="44">
+          </li>
+        </a>
+        <!-- Производитель №4 -->
+        <a class="popular-brands__link" href="#" title="Продукция компании ИНТЕРСКОЛ" aria-label="Ведет на страницу с продукцией компании ИНТЕРСКОЛ">
+          <li class="popular-brands__item">
+            <img src="img/logo-interskol.png" alt="Логотип компании ИНТЕРСКОЛ" width="200" height="88">
+          </li>
+        </a>
+        <!-- Производитель №5 -->
+        <a class="popular-brands__link" href="#" title="Продукция компании HITACHI" aria-label="Ведет на страницу с продукцией компании HITACHI">
+          <li class="popular-brands__item">
+            <img src="img/logo-hitachi.png" alt="Логотип компании HITACHI" width="169" height="31">
+          </li>
+        </a>
+        <!-- Производитель №6 -->
+        <a class="popular-brands__link" href="#" title="Продукция компании LG" aria-label="Ведет на страницу с продукцией компании LG">
+          <li class="popular-brands__item">
+            <img src="img/logo-lg.png" alt="Логотип компании LG" width="121" height="73">
+          </li>
+        </a>
+        <!-- Производитель №7 -->
+        <a class="popular-brands__link" href="#" title="Продукция компании AEG" aria-label="Ведет на страницу с продукцией компании AEG">
+          <li class="popular-brands__item">
+            <img src="img/logo-aeg.png" alt="Логотип компании AEG" width="151" height="96">
+          </li>
+        </a>
+        <!-- Производитель №8 -->
+        <a class="popular-brands__link" href="#" title="Продукция компании metabo" aria-label="Ведет на страницу с продукцией компании metabo">
+          <li class="popular-brands__item">
+            <img src="img/logo-metabo.png" alt="Логотип компании metabo" width="204" height="69">
+          </li>
+        </a>
+      </ul>
+      <a class="popular-brands__link more-info-link" href="#">Все производители</a>
+    </section>
+
 
     <section class="company-info">
       <article class="about-company">
@@ -80,7 +223,7 @@
 
   <footer class="site-footer">
     <div class="footer-top">
-      <a class="site-logo"><img src="img/footer-logo.png" alt="Логотип «Техномарта»" width="220" height="68"></a>
+      <a class="site-logo"><img src="img/site-footer-logo.png" alt="Логотип «Техномарта»" width="220" height="68"></a>
       <address class="footer-company-contacts">
         г. Санкт-Петербург, ул. Б. Конюшенная, д.<br>
         +7 (812) 555-05-55

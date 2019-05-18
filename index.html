@@ -33,9 +33,9 @@
       </ul>
       <nav class="main-nav">
         <ul class="header-site-nav">
-          <li><a href="#">Главная</a></li>
+          <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -64,8 +64,34 @@
           <h3 class="promo-item__title">Техника</h3>
           <a class="promo-item__link" href="#">Для стройки</a>
         </li>
-        <li>
-          <!-- Здесь будет слайдер -->
+        <li class="promo__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <input class="slider__input-radio" type="radio" name="slides-group" value="slide-1" id="slider-slide-1" checked>
+              <label class="slider__label visually-hidden" for="slider-slide-1">Первый слайд</label>
+            </li>
+            <li class="slider__item">
+              <input class="slider__input-radio" type="radio" name="slides-group" value="slide-2" id="slider-slide-2">
+              <label class="slider__label visually-hidden" for="slider-slide-2">Второй слайд</label>
+            </li>
+          </ul>
+          <div class="slider__slide slide">
+            <h3 class="slide__title">Перфораторы</h3>
+            <p class="slide__text">Настоящие мужские игрушки</p>
+            <img src="img/slide-1.jpg" alt="" width="620" height="266">
+          </div>
+          <div class="slider__slide slide" hidden>
+            <h3 class="slide__title">Дрели</h3>
+            <p class="slide__text">Соседям на радость!</p>
+            <img src="img/slide-2.jpg" alt="" width="620" height="266">
+          </div>
+          <button class="slider__btn slider__left-btn" type="button">
+            <img src="img/icon-slider-left-arrow.svg" alt="Кнопка cлайдера: листать влево" width="22" height="40">
+          </button>
+          <button class="slider__btn slider__right-btn" type="button">
+            <img src="img/icon-slider-right-arrow.svg" alt="Кнопка cлайдера: листать вправо" width="22" height="40">
+          </button>
+          <a class="slider__link" href="catalog.html">Открыть каталог</a>
         </li>
         <li class="promo-item">
           <h3 class="promo-item__title">Скидки 50%</h3>
@@ -191,6 +217,48 @@
       <a class="popular-brands__link more-info-link" href="#">Все производители</a>
     </section>
 
+    <section class="services">
+      <h2 class="services__title">Сервисы</h2>
+      <p class="services__text">
+        Хороший интернет-магазин отличается от плохого не только ценами!
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+      </p>
+      <ul class="services__list">
+        <li class="services__item service">
+          <input class="visually-hidden service__input" type="radio" name="service-group" value="delivery" id="service-delivery" checked>
+          <label class="service__label" for="service-delivery">Доставка</label>
+        </li>
+        <li class="services__item service">
+          <input class="visually-hidden service__input" type="radio" name="service-group" value="guarantee" id="service-guarantee">
+          <label class="service__label" for="service-guarantee">Гарантия</label>
+        </li>
+        <li class="services__item service">
+          <input class="visually-hidden service__input" type="radio" name="service-group" value="credit" id="service-credit">
+          <label class="service__label" for="service-credit">Кредит</label>
+        </li>
+      </ul>
+      <div class="services__delivery delivery">
+        <h3 class="delivery__title">Доставка</h3>
+        <p class="delivery__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+          Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+        </p>
+      </div>
+      <div class="services__guarantee guarantee" hidden>
+        <h3 class="guarantee__title">Гаратия</h3>
+        <p class="guarantee__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
+          спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии.
+          Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+        </p>
+      </div>
+      <div class="services__credit credit" hidden>
+        <h3 class="credit__title">Кредит</h3>
+        <p class="credit__text">
+          Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+        </p>
+        <a class="credit__link" href="#">Отправить заявку</a>
+      </div>
+    </section>
+
 
     <section class="company-info">
       <article class="about-company">
@@ -214,8 +282,11 @@
       <div class="map-container">
         <h2 class="map-container-title">Контакты</h2>
         <p class="map-container-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map-picture.png" alt="Большая Конюшенная ул., 19" width="300" height="158">
-        <a class="more-info-link" href="#">Заблудились? Напишите нам!</a>
+        <a href="https://yandex.ru/maps/?um=constructor%3Ae3f95bce20c42b025a2552811e1c8a6b291459077bd919de3261149e19a1d7eb&source=constructorLink" title="Кликните для перехода к интерактивной карте">
+          <img src="img/map-picture.png" alt="Большая Конюшенная ул., 19" width="300" height="158">
+        </a>
+
+        <a class="more-info-link" href="write-us.html">Заблудились? Напишите нам!</a>
       </div>
     </section>
   </main>
@@ -231,7 +302,7 @@
       <ul class="footer-site-nav">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
-        <li><a href="#">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
@@ -258,10 +329,24 @@
       </p>
       <p class="footer-copyright">
         <b>Разработанно:</b>
-        <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </div>
   </footer>
+
+
+  <section class="modal-window-big-map">
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3f95bce20c42b025a2552811e1c8a6b291459077bd919de3261149e19a1d7eb&amp;width=940&amp;height=446&amp;lang=ru_RU&amp;scroll=true"></script>
+  </section>
+
+  <section class="add-to-basket">
+    <h2 class="add-to-basket__title">Товар добавлен в корзину!</h2>
+    <a href="#">Оформить заказ</a>
+    <button class="close-btn" type="button" name="close-btn">Продолжить покупки</button>
+    <button class="close-button" type="button" name="close-button">Закрыть</button>
+  </section>
+
 </body>
 
 </html>

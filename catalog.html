@@ -11,7 +11,17 @@
   <header class="site-header">
     <div class="header-top">
       <a class="site-logo" href="index.html"><img src="img/site-header-logo.png" alt="Логотип «Техномарта»" width="220" height="47"></a>
-      <!-- Здесь будет форма поиска по сайту -->
+      <form class="site-header__form" action="#" method="get">
+        <label class="visually-hidden" for="search-field">Поиск:</label>
+        <input type="search" name="search" id="search-field" list="search-items" placeholder="Поиск:">
+        <datalist id="search-items">
+          <option value="BOSCH BFG-9000"></option>
+          <option value="BOSCH BFG-3000"></option>
+          <option value="BOSCH BFG-6000"></option>
+          <option value="BOSCH BFG-2000"></option>
+        </datalist>
+        <button type="submit" name="button">Найти</button>
+      </form>
       <p class="header-top-btns">
         <a class="main-bookmarks-btn" href="#">Закладки: 0</a>
         <a class="main-basket-btn" href="#">Корзина: 0</a>

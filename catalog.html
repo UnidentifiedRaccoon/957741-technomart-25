@@ -11,16 +11,10 @@
   <header class="site-header">
     <div class="header-top">
       <a class="site-logo" href="index.html"><img src="img/site-header-logo.png" alt="Логотип «Техномарта»" width="220" height="47"></a>
-      <form class="site-header__form" action="#" method="get">
+      <form class="site-header__form" action="https://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search-field">Поиск:</label>
-        <input type="search" name="search" id="search-field" list="search-items" placeholder="Поиск:">
-        <datalist id="search-items">
-          <option value="BOSCH BFG-9000"></option>
-          <option value="BOSCH BFG-3000"></option>
-          <option value="BOSCH BFG-6000"></option>
-          <option value="BOSCH BFG-2000"></option>
-        </datalist>
-        <button type="submit" name="button">Найти</button>
+        <input type="search" name="search" id="search-field" placeholder="Поиск:">
+        <button type="submit" name="button"><span class="visually-hidden">Найти</span></button>
       </form>
       <p class="header-top-btns">
         <a class="main-bookmarks-btn" href="#">Закладки: 0</a>
@@ -73,12 +67,13 @@
 
     <section class="filter">
       <h2 class="filter__title">Фильтр:</h2>
-      <form class="filter__form" action="#" method="get">
+      <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filter__fieldset">
           <legend class="filter__legend">Цена:</legend>
           <!-- здесь будет ползунок с ценами -->
         </fieldset>
         <fieldset class="filter__fieldset">
+
           <legend class="filter__legend">Производители:</legend>
           <ul class="filter__list">
             <li class="filter__option">
@@ -117,7 +112,6 @@
           </ul>
         </fieldset>
         <button type="submit">Показать</button>
-        <button type="reset">Сбросить</button>
       </form>
     </section>
 
@@ -296,9 +290,9 @@
         © 2010–2019 Компания «Техномарт» Все права защищены
       </p>
       <ul class="footer-social">
-        <li><a class="social-btn" href="#" title="Наш Вконтакте">Вконтакте</a></li>
-        <li><a class="social-btn" href="#" title="Наш Фейсбук">Фейсбук</a></li>
-        <li><a class="social-btn" href="#" title="Наш Инстаграм">Инстаграм</a></li>
+        <li><a class="social-btn social-btn-vk" href="#" title="Наш Вконтакте" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a class="social-btn social-btn-fb" href="#" title="Наш Фейсбук" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-btn social-btn-insta" href="#" title="Наш Инстаграм" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
       <p class="footer-feedback">
         <b>Обратная связь:</b>

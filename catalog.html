@@ -12,55 +12,66 @@
 <body>
   <header class="site-header">
     <div class="header-top">
-      <div class="site-header__logo-box">
+      <div class="header-top__container container">
         <a class="site-header__logo" href="index.html"><img src="img/site-logo-text.svg" alt="Логотип «Техномарта»" width="109" height="19"></a>
+        <form class="site-header__form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-field">Поиск:</label>
+          <input class="site-header__search-input" type="search" name="search" id="search-field" placeholder="Поиск:">
+          <button type="submit" name="button"><span class="visually-hidden">Найти</span></button>
+        </form>
+        <p class="site-header__buy-links">
+          <a class="main-bookmarks-btn" href="#">Закладки: 0</a>
+          <a class="main-basket-btn" href="#">Корзина: 0</a>
+          <a class="main-order-btn" href="#">Оформить заказ</a>
+        </p>
       </div>
-      <form class="site-header__form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-field">Поиск:</label>
-        <input class="site-header__search-input" type="search" name="search" id="search-field" placeholder="Поиск:">
-        <button type="submit" name="button"><span class="visually-hidden">Найти</span></button>
-      </form>
-      <p class="site-header__buy-links">
-        <a class="main-bookmarks-btn" href="#">Закладки: 0</a>
-        <a class="main-basket-btn" href="#">Корзина: 0</a>
-        <a class="main-order-btn" href="#">Оформить заказ</a>
-      </p>
+    </div>
+
+
+    <div class="header-middle">
+      <div class="header-middle__container container">
+        <h2 class="site-header__title">
+          Интернет-магазин строительных материалов и инструментов для ремонта
+        </h2>
+        <address class="site-header__contacts">
+          <span class="site-header__tel">+7 (812) 555-05-55</span>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+        <div class="user-info">
+          <div class="user-info__block">
+            <p class="user-info__name">ФИО пользователя</p>
+            <a class="user-info__exit-link" href="#"><span class="visually-hidden">Выйти</span></a>
+          </div>
+          <ul class="user-info__nav">
+            <li><a class="user-info__orders-link" href="#">Мои заказы</a></li>
+            <li><a class="user-info__cabinet-link" href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="header-bottom">
-      <h2 class="site-header__title">
-        Интернет-магазин строительных материалов и инструментов для ремонта
-      </h2>
-      <address class="site-header__contacts">
-        <span class="site-header__tel">+7 (812) 555-05-55</span>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </address>
-      <div class="user-info">
-        <div class="user-info__block">
-          <p class="user-info__name">ФИО пользователя</p>
-          <a class="user-info__exit-link" href="#"><span class="visually-hidden">Выйти</span></a>
-        </div>
-        <ul class="user-info__nav">
-          <li><a class="user-info__orders-link" href="#">Мои заказы</a></li>
-          <li><a class="user-info__cabinet-link" href="#">Личный кабинет</a></li>
-        </ul>
+      <div class="header-bottom__container container">
+        <nav class="site-header__main-nav">
+          <ul class="site-header__site-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a>Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="site-header__main-nav">
-        <ul class="site-header__site-nav">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a>Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
 
-  <main class="site-content">
+  <main class="site-content site-content__catalog">
+
+<div class="site-container container">
+  <div class="catalog-container__top-wrap">
     <ul class="breadcrumbs">
       <li><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
       <li><a href="#">Каталог</a></li>
@@ -69,7 +80,9 @@
     </ul>
 
     <h1 class="page-title section-title">Перфораторы</h1>
+  </div>
 
+<div class="catalog-container__bottom-wrap">
     <section class="filter">
       <h2 class="filter__title">Фильтр:</h2>
       <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
@@ -121,24 +134,25 @@
     </section>
 
     <section class="products">
+
       <h2 class="visually-hidden">Список продукции</h2>
       <div class="sorting-box">
         <h2 class="sorting-box__title">Сортировка:</h2>
         <ul class="sorting-box__links-list">
           <li>
-            <a class="sorting-box__get-link"href="#">По цене</a>
+            <a class="sorting-box__get-link" href="#">По цене</a>
           </li>
           <li>
-            <a class="sorting-box__get-link"href="#">По типу</a>
+            <a class="sorting-box__get-link" href="#">По типу</a>
           </li>
           <li>
-            <a class="sorting-box__get-link"href="#">По функциональности</a>
+            <a class="sorting-box__get-link" href="#">По функциональности</a>
           </li>
           <li>
-            <a class="sorting-box__get-link"href="#"><span class="visually-hidden">По возрастанию</span></a>
+            <a class="sorting-box__get-link" href="#"><span class="visually-hidden">По возрастанию</span></a>
           </li>
           <li>
-            <a class="sorting-box__get-link"href="#"><span class="visually-hidden">По убыванию</span></a>
+            <a class="sorting-box__get-link" href="#"><span class="visually-hidden">По убыванию</span></a>
           </li>
         </ul>
       </div>
@@ -261,16 +275,19 @@
           </p>
         </li>
       </ul>
+      <ul class="pagination__list">
+        <li class="pagination__item"><a class="pagination__link pagination__link-current">1</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+        <li class="pagination__item"><a class="pagination__link" href="#">Следующая</a></li>
+      </ul>
     </section>
 
-    <ul class="pagination__list">
-      <li class="pagination__item"><a class="pagination__link-current">1</a></li>
-      <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-      <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-      <li class="pagination__item"><a class="pagination__link" href="#">Следующая</a></li>
-    </ul>
+</div>
+</div>
 
     <section class="about-perforators">
+      <div class="about-perforators__container container">
       <h2 class="about-perforators__title section-title">Пара слов о перфораторах</h2>
       <p class="about-perforators__text">Перфоратор — универсальный строительный инструмент.
         Предназначен для сверления и долбления отверстий в кирпиче,
@@ -280,51 +297,58 @@
         есть выбор «трехрежимников»: в одном устройстве будут совмещены
         отбойный молоток и ударная дрель.
       </p>
+    </div>
     </section>
   </main>
 
 
   <footer class="site-footer">
     <div class="footer-top">
-      <div class="site-footer__logo-box">
-        <a class="site-footer__logo" href="index.html"><img src="img/site-logo-text.svg" alt="Логотип «Техномарта»" width="109" height="19"></a>
+      <div class="footer-top__container container">
+        <div class="footer-top__row">
+          <a class="site-footer__logo" href="index.html"><img src="img/site-logo-text.svg" alt="Логотип «Техномарта»" width="109" height="19"></a>
+          <ul class="site-footer__site-nav">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a>Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-top__row">
+          <address class="site-footer__contacts">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д.<br>
+            +7 (812) 555-05-55
+          </address>
+          <ul class="site-footer__products-nav">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструменты</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
       </div>
-      <address class="site-footer__contacts">
-        г. Санкт-Петербург, ул. Б. Конюшенная, д.<br>
-        +7 (812) 555-05-55
-      </address>
-      <ul class="site-footer__site-nav">
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a>Каталог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="site-footer__products-nav">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструменты</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-      </ul>
     </div>
 
     <div class="footer-bottom">
-      <p class="site-footer__company-copyright">
-        © 2010–2019 Компания «Техномарт» Все права защищены
-      </p>
-      <ul class="site-footer__social">
-        <li><a class="social-btn social-btn-vk" href="#" title="Наш Вконтакте" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
-        <li><a class="social-btn social-btn-fb" href="#" title="Наш Фейсбук" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a class="social-btn social-btn-insta" href="#" title="Наш Инстаграм" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
-      </ul>
-      <p class="site-footer__feedback">
-        <b>Обратная связь:</b>
-        <a class="site-footer__htmlacademy-link"href="#">mail@htmlacademy.ru</a>
-      </p>
-      <p class="site-footer__copyright">
-        <b>Разработанно:</b>
-        <a class="site-footer__htmlacademy-link"href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </p>
+      <div class="footer-bottom__container container">
+        <p class="site-footer__company-copyright">
+          © 2010–2019 Компания «Техномарт» Все права защищены
+        </p>
+        <ul class="site-footer__social">
+          <li><a class="social-btn social-btn-vk" href="#" title="Наш Вконтакте" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="social-btn social-btn-fb" href="#" title="Наш Фейсбук" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-btn social-btn-insta" href="#" title="Наш Инстаграм" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
+        </ul>
+        <p class="site-footer__feedback">
+          <span>Обратная связь:</span>
+          <a class="site-footer__htmlacademy-link" href="#">mail@htmlacademy.ru</a>
+        </p>
+        <p class="site-footer__copyright">
+          <span>Разработанно:</span>
+          <a class="site-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </p>
+      </div>
     </div>
   </footer>
 

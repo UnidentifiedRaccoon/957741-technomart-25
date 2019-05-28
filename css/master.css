@@ -430,10 +430,8 @@ color: yellow;
 
 .products-item:hover,
 .products-item:focus-within {
-  margin: 1px;
-
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
-  border: none;
+  border-color: transparent;/* решение лучше но не идеально*/
 }
 
 .products-item__title {
@@ -555,10 +553,8 @@ color: yellow;
 
 .popular-brands__item:hover,
 .popular-brands__item:focus-within {
-  margin: 1px;
-
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
-  border: none;
+  border-color: transparent;/* решение лучше но не идеально*/
 }
 
 /* SERVICES */

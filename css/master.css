@@ -299,8 +299,6 @@ color: yellow;
 .promo__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
   margin: 0;
   padding: 0;
   min-height: 410px;
@@ -309,9 +307,16 @@ color: yellow;
 }
 
 .promo__item {
+  margin-bottom: 20px;
+  margin-right: 20px;
+
   width: 300px;
   min-height: 123px;
   /**/
+}
+
+.promo-item:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .promo-item__title {
@@ -408,30 +413,37 @@ color: yellow;
 
 .popular-products__list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.products__list {
-   /* from catalog.html */
-   margin: 0;
-   padding: 0;
-}
-
 .products-item {
   position: relative;
-  width: 218px;
-  min-height: 318px;
+
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  width: 220px;
+  min-height: 320px;
   /**/
   border: 1px solid #eaeaea;
 }
 
-.products-item:hover,
+.popular-products__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+
+.products-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  border: none;
+}
+
 .products-item:focus-within {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
-  border-color: transparent;/* решение лучше но не идеально*/
+  border: none;
 }
 
 .products-item__title {
@@ -476,7 +488,10 @@ color: yellow;
   background-color: #ffffff;
 }
 
-.products-item:hover .products-item__action,
+.products-item:hover .products-item__action {
+  display: block;
+}
+
 .products-item:focus-within .products-item__action {
   display: block;
 }
@@ -535,8 +550,6 @@ color: yellow;
 .popular-brands__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
   margin: 0;
   padding: 0;
   min-height: 310px;
@@ -545,16 +558,28 @@ color: yellow;
 }
 
 .popular-brands__item {
-  width: 218px;
-  min-height: 143px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  width: 220px;
+  min-height: 120px;
   /**/
   border: 1px solid #eaeaea;
 }
 
-.popular-brands__item:hover,
+.popular-brands__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.popular-brands__item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  border: none;
+}
+
 .popular-brands__item:focus-within {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
-  border-color: transparent;/* решение лучше но не идеально*/
+  border: none;
 }
 
 /* SERVICES */
@@ -813,15 +838,19 @@ color: yellow;
 
 .products__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  align-content: space-between;
   /* Временно для удобства */
 
+  margin: 0;
+  padding: 0;
   margin-bottom: 70px;
   min-height: 1000px; /**/
 
   list-style: none;
+}
+
+.products__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* PAGINATION */
@@ -840,6 +869,7 @@ color: yellow;
   font-weight: 400;
   list-style: none;
 }
+
 
 .pagination__link {
   margin-right: 10px;

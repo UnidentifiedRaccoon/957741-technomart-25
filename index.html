@@ -17,6 +17,10 @@
         <form class="site-header__form" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search-field">Поиск:</label>
           <input class="site-header__search-input" type="search" name="search" id="search-field" placeholder="Поиск:">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path fill="#231F20"
+              d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+            </svg>
           <!-- <button type="submit" name="button"><span class="visually-hidden">Найти</span></button> -->
         </form>
         <p class="site-header__buy-links">
@@ -31,14 +35,22 @@
     <div class="header-middle">
       <div class="header-middle__container container">
         <h1 class="site-header__title">
-          Интернет-магазин строительных материалов и инструментов для ремонта
+          Интернет-магазин
+          строительных материалов <br>
+          и инструментов для ремонта
         </h1>
         <address class="site-header__contacts">
-          <span class="site-header__tel">+7 (812) 555-05-55</span><br>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <span class="site-header__tel">+7 (812) 555-05-55</span>
+          <p class="site-header__location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <ul class="site-header__user-nav">
-          <li><a class="login-link" href="#">Войти</a></li>
+          <li>
+            <a class="login-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                <path fill="#32425C" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                <path fill="#32425C" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+            </svg>
+            Войти</a></li>
           <li><a class="registration-link" href="#">Регистрация</a></li>
         </ul>
       </div>
@@ -47,16 +59,16 @@
 
     <div class="header-bottom">
       <div class="header-bottom__container container">
-        <!-- Может лучше присвоить этот класс nav'у и убрать лишний div -->
-        <nav class="site-header__main-nav">
-          <ul class="site-header__site-nav">
-            <li><a>Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
+
+              <nav class="site-header__main-nav">
+          <ul class="site-header__site-nav site-nav">
+            <li><a class="site-nav__link site-nav__main-link">Главная</a></li>
+            <li><a class="site-nav__link" href="#">Компания</a></li>
+            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li><a class="site-nav__link" href="#">Новости</a></li>
+            <li><a class="site-nav__link" href="#">Спецпредложения</a></li>
+            <li><a class="site-nav__link" href="#">Доставка</a></li>
+            <li><a class="site-nav__link site-nav__contacts-link"href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -136,7 +148,7 @@
     <section class="popular-products">
       <div class="popular-products__container container">
         <div class="popular-products__head-box popular-head-box">
-          <h2 class="popular-products__title section-title">Популярные продукты:</h2>
+          <h2 class="popular-products__title section-title">Популярные товары:</h2>
           <a class="popular-products__link more-info-link" href="#">Все популярные товары</a>
         </div>
         <ul class="popular-products__list">
@@ -206,53 +218,53 @@
           <!-- Производитель №1 -->
 
           <li class="popular-brands__item">
-            <a class="popular-brands__link" href="#" title="Продукция компании BOSCH" aria-label="Ведет на страницу с продукцией компании BOSCH">
-              <img src="img/logo-bosch.png" alt="Логотип компании BOSCH" width="126" height="37">
+            <a class="popular-brand__link" href="#" title="Продукция компании BOSCH" aria-label="Ведет на страницу с продукцией компании BOSCH">
+              <img class="popular-brand__logo-bosch" src="img/logo-bosch.png" alt="Логотип компании BOSCH" width="126" height="37">
             </a>
           </li>
 
           <!-- Производитель №2 -->
 
           <li class="popular-brands__item">
-            <a class="popular-brands__link" href="#" title="Продукция компании Makita" aria-label="Ведет на страницу с продукцией компании Makita">
-              <img src="img/logo-makita.png" alt="Логотип компании Makita" width="123" height="40">
+            <a class="popular-brand__link" href="#" title="Продукция компании Makita" aria-label="Ведет на страницу с продукцией компании Makita">
+              <img class="popular-brand__logo-makita" src="img/logo-makita.png" alt="Логотип компании Makita" width="123" height="40">
             </a>
           </li>
 
           <!-- Производитель №3 -->
           <li class="popular-brands__item">
-            <a class="popular-brands__link" href="#" title="Продукция компании DeWALT" aria-label="Ведет на страницу с продукцией компании DeWALT">
-              <img src="img/logo-dewalt.png" alt="Логотип компании DeWALT" width="146" height="44">
+            <a class="popular-brand__link" href="#" title="Продукция компании DeWALT" aria-label="Ведет на страницу с продукцией компании DeWALT">
+              <img class="popular-brand__logo-dewalt" src="img/logo-dewalt.png" alt="Логотип компании DeWALT" width="146" height="44">
             </a>
           </li>
           <!-- Производитель №4 -->
           <li class="popular-brands__item">
-            <a class="popular-brands__link" href="#" title="Продукция компании ИНТЕРСКОЛ" aria-label="Ведет на страницу с продукцией компании ИНТЕРСКОЛ">
-              <img src="img/logo-interskol.png" alt="Логотип компании ИНТЕРСКОЛ" width="200" height="88">
+            <a class="popular-brand__link" href="#" title="Продукция компании ИНТЕРСКОЛ" aria-label="Ведет на страницу с продукцией компании ИНТЕРСКОЛ">
+              <img class="popular-brand__logo-interskol" src="img/logo-interskol.png" alt="Логотип компании ИНТЕРСКОЛ" width="200" height="88">
             </a>
           </li>
           <!-- Производитель №5 -->
           <li class="popular-brands__item">
-            <a class="popular-brands__link" href="#" title="Продукция компании HITACHI" aria-label="Ведет на страницу с продукцией компании HITACHI">
-              <img src="img/logo-hitachi.png" alt="Логотип компании HITACHI" width="169" height="31">
+            <a class="popular-brand__link" href="#" title="Продукция компании HITACHI" aria-label="Ведет на страницу с продукцией компании HITACHI">
+              <img class="popular-brand__logo-hitachi" src="img/logo-hitachi.png" alt="Логотип компании HITACHI" width="169" height="31">
             </a>
           </li>
           <!-- Производитель №6 -->
           <li class="popular-brands__item">
-            <a class="popular-brands__link" href="#" title="Продукция компании LG" aria-label="Ведет на страницу с продукцией компании LG">
-              <img src="img/logo-lg.png" alt="Логотип компании LG" width="121" height="73">
+            <a class="popular-brand__link" href="#" title="Продукция компании LG" aria-label="Ведет на страницу с продукцией компании LG">
+              <img class="popular-brand__logo-lg" src="img/logo-lg.png" alt="Логотип компании LG" width="121" height="73">
             </a>
           </li>
           <!-- Производитель №7 -->
           <li class="popular-brands__item">
-            <a class="popular-brands__link" href="#" title="Продукция компании AEG" aria-label="Ведет на страницу с продукцией компании AEG">
-              <img src="img/logo-aeg.png" alt="Логотип компании AEG" width="151" height="96">
+            <a class="popular-brand__link" href="#" title="Продукция компании AEG" aria-label="Ведет на страницу с продукцией компании AEG">
+              <img class="popular-brand__logo-aeg" src="img/logo-aeg.png" alt="Логотип компании AEG" width="151" height="96">
             </a>
           </li>
           <!-- Производитель №8 -->
           <li class="popular-brands__item">
-            <a class="popular-brands__link" href="#" title="Продукция компании metabo" aria-label="Ведет на страницу с продукцией компании metabo">
-              <img src="img/logo-metabo.png" alt="Логотип компании metabo" width="204" height="69">
+            <a class="popular-brand__link" href="#" title="Продукция компании metabo" aria-label="Ведет на страницу с продукцией компании metabo">
+              <img class="popular-brand__logo-metabo" src="img/logo-metabo.png" alt="Логотип компании metabo" width="204" height="69">
             </a>
           </li>
         </ul>
@@ -328,25 +340,26 @@
             Огромный выбор товаров для ремонта и строительства
             не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
-          <p class="about-company__text">
+          <div class="transport-companies">
+          <p class="about-company__text transport-companies__text">
             Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
-          <ul class="about-company__list company-list">
-            <li class="company-list__item">Деловые линии</li>
-            <li class="company-list__item">Автотрейдинг</li>
-            <li class="company-list__item">ЖелДорЭкспедиция</li>
+          <ul class="about-company__list transport-companies__list">
+            <li class="transport-companies__item">Деловые линии</li>
+            <li class="transport-companies__item">Автотрейдинг</li>
+            <li class="transport-companies__item">ЖелДорЭкспедиция</li>
           </ul>
-          <a class="more-info-link" href="#">Подробнее о компании</a>
+          <a class="about-company__link more-info-link" href="#">Подробнее о компании</a>
         </article>
 
-        <section class="map-container">
-          <h2 class="map-container__title section-title">Контакты</h2>
-          <p class="map-container__text">Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="https://yandex.ru/maps/?um=constructor%3Ae3f95bce20c42b025a2552811e1c8a6b291459077bd919de3261149e19a1d7eb&source=constructorLink" title="Кликните для перехода к интерактивной карте">
+        <section class="map-section">
+          <h2 class="map-section__title section-title">Контакты</h2>
+          <p class="map-section__text">Вы можете забрать товар сами, заехав в наш офис:</p>
+          <a class="map-section__map-link" href="https://yandex.ru/maps/?um=constructor%3Ae3f95bce20c42b025a2552811e1c8a6b291459077bd919de3261149e19a1d7eb&source=constructorLink" title="Кликните для перехода к интерактивной карте">
             <img src="img/map-picture.png" alt="Большая Конюшенная ул., 19" width="300" height="158">
           </a>
-          <a class="more-info-link" href="#">Заблудились? Напишите нам!</a>
+          <a class="map-section__link more-info-link" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </section>
@@ -357,7 +370,7 @@
     <div class="footer-top">
       <div class="footer-top__container container">
         <div class="footer-top__row">
-          <a class="site-footer__logo"><img src="img/site-logo-text.svg" alt="Логотип «Техномарта»" width="109" height="19"></a>
+          <a class="site-footer__logo"><img src="img/site-logo-text.svg" alt="Логотип «Техномарта»" width="138" height="23"></a>
           <ul class="site-footer__site-nav">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -368,13 +381,13 @@
         </div>
         <div class="footer-top__row">
           <address class="site-footer__contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д.<br>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55
           </address>
           <ul class="site-footer__products-nav">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструменты</a></li>
+            <li><a href="#">Инструмент</a></li>
             <li><a href="#">Спецпредложения</a></li>
           </ul>
         </div>
@@ -387,17 +400,23 @@
           © 2010–2019 Компания «Техномарт» Все права защищены
         </p>
         <ul class="site-footer__social">
-          <li><a class="social-btn social-btn-vk" href="#" target="_blank"><span class="visually-hidden">Вконтакте</span></a></li>
-          <li><a class="social-btn social-btn-fb" href="#" target="_blank"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-btn social-btn-insta" href="#" target="_blank"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-link social-link-vk" href="#" target="_blank">
+            <span class="visually-hidden">Вконтакте</span>
+          </a></li>
+          <li><a class="social-link social-link-fb" href="#" target="_blank">
+            <span class="visually-hidden">Фейсбук</span>
+          </a></li>
+          <li><a class="social-link social-link-insta" href="#" target="_blank">
+            <span class="visually-hidden">Инстаграм</span>
+          </a></li>
         </ul>
         <p class="site-footer__feedback">
           <span>Обратная связь:</span>
-          <a href="#">mail@htmlacademy.ru</a>
+          <a class="site-footer__htmlacademy-link" href="#">mail@htmlacademy.ru</a>
         </p>
         <p class="site-footer__copyright">
           <span>Разработанно:</span>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a class="site-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </div>
@@ -406,9 +425,9 @@
 
   <section class="modal-window-big-map">
     <h2 class="visually-hidden">Интерактивная карта</h2>
-    <script type="text/javascript" charset="utf-8" async
+    <!-- <script type="text/javascript" charset="utf-8" async
       src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3f95bce20c42b025a2552811e1c8a6b291459077bd919de3261149e19a1d7eb&amp;width=940&amp;height=446&amp;lang=ru_RU&amp;scroll=true"></script>
-    <button class="close-button" type="button" name="close-button">
+    --><button class="close-button" type="button" name="close-button">
       <span class="visually-hidden">Закрыть</span>
     </button>
   </section>

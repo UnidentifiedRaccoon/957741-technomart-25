@@ -94,22 +94,19 @@ input[type="radio"].visually-hidden {
 }
 
 .site-header__logo {
-  display: block;
   margin-bottom: -5px;
   width: 220px;
-  height: 42px;
-  box-shadow: 0px 5px 0 0 rgba(0, 0, 0, 0.24);
+  height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 
 .site-header__logo:hover,
 .site-header__logo:focus {
-  box-shadow: 0px 5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ca2c37;
 }
 
 .site-header__logo:active {
-  box-shadow: 0px 5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ba2732;
 }
 
@@ -120,7 +117,7 @@ input[type="radio"].visually-hidden {
 
 .site-header__form {
   position: relative;
-  margin-right: auto;
+  height: 42px;
 }
 
 .site-header__form svg {
@@ -479,6 +476,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.user-info__profile-link:active .user-info__name {
+  opacity: 0.3;
+}
+
 .user-info__profile-link::before {
   content: "";
   position: absolute;
@@ -489,6 +490,16 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-user.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.3
+}
+
+.user-info__profile-link:hover::before,
+.user-info__profile-link:focus::before {
+  opacity: 1;
+}
+
+.user-info__profile-link:active::before {
+  opacity: 0.3;
 }
 
 .user-info__logout-link {
@@ -498,6 +509,16 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-logout.svg");
   background-repeat: no-repeat;
   background-position: 50% 55%;
+  opacity: 0.3
+}
+
+.user-info__logout-link:hover,
+.user-info__logout-link:focus {
+  opacity: 1;
+}
+
+.user-info__logout-link:active {
+  opacity: 0.3;
 }
 
 .user-info__nav {
@@ -1701,6 +1722,7 @@ input[type="radio"].visually-hidden {
 
 /* FOOTER-TOP */
 .footer-top {
+  padding-bottom: 23px;
   width: 100%;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
@@ -1709,15 +1731,13 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
 }
 
+
+
 .footer-top__row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 27px;
-}
-
-.footer-top__row:last-child {
-  padding-bottom: 50px;
+  margin-bottom: 27px;
 }
 
 .site-footer__logo {

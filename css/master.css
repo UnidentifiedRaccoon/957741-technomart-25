@@ -132,7 +132,9 @@ input[type="radio"].visually-hidden {
 }
 
 .site-header__search-input {
+  box-sizing: border-box;
   max-width: 270px;
+  height: 42px;
   padding: 12px 72px 12px 48px;
   font: inherit;
   border: none;
@@ -285,13 +287,14 @@ input[type="radio"].visually-hidden {
 
 .header-middle__container {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
 }
 
 .site-header__title {
   width: 205px;
   padding: 0;
-  margin: 5px 60px 0 52px;;
+  margin: 5px 60px 0 52px;
+  ;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -752,24 +755,18 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__toggle {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
-
-
 
 .slider__btn {
   position: absolute;
   top: 135px;
-
   width: 30px;
   height: 30px;
-
   background-color: transparent;
   border: 3px solid #ffffff;
   border-left: none;
   border-bottom: none;
-
   z-index: 10;
 }
 
@@ -1042,7 +1039,7 @@ input[type="radio"].visually-hidden {
 
 /* BRANDS */
 .popular-brands {
-  padding-bottom: 65px;
+  padding-bottom: 85px;
 }
 
 .popular-brands__head-box {
@@ -1093,7 +1090,7 @@ input[type="radio"].visually-hidden {
 .popular-brands__item:nth-last-child(2),
 .popular-brands__item:nth-last-child(3),
 .popular-brands__item:nth-last-child(4) {
-  margin-buttom: 0;
+  margin-bottom: 0;
 }
 
 .popular-brands__item:hover {
@@ -1143,7 +1140,7 @@ input[type="radio"].visually-hidden {
 
 .services__text {
   margin: 0;
-    margin-bottom: 70px;
+  margin-bottom: 70px;
   padding: 0;
   /*временно для удобства*/
   width: 400px;
@@ -1169,14 +1166,11 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -40px;
   right: 0;
-
   width: 10px;
   height: 280px;
-
   background-image: url("../img/services-shadow.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .switch {
@@ -1192,7 +1186,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   padding: 15px 21px 18px 21px;
   width: 240px;
-    background-color: #32425c;
+  background-color: #32425c;
 }
 
 .switch__label:hover {
@@ -1873,8 +1867,6 @@ input[type="radio"].visually-hidden {
   background-color: #32425c;
 }
 
-
-
 .footer-top__row {
   display: flex;
   justify-content: space-between;
@@ -1907,6 +1899,11 @@ input[type="radio"].visually-hidden {
 
 .site-footer__contacts {
   color: #f3f7f9;
+}
+
+.site-footer__tel {
+  color: #f3f7f9;
+  text-decoration: none;
 }
 
 .site-footer__site-nav {
@@ -2067,7 +2064,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
   border-top: 7px solid #ee3643;
   background-color: #ffffff;
-
   z-index: 100;
 }
 

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
@@ -334,9 +335,10 @@
 
 
     <section class="company-info">
+      <h2 class="visually-hidden">Кратко о компении "Техномарт"</h2>
       <div class="company-info__container container">
         <article class="about-company">
-          <h2 class="about-company__title section-title">Компания «Техномарт»</h2>
+          <h3 class="about-company__title section-title">Компания «Техномарт»</h3>
           <p class="about-company__text">Настоящий мужской шоппинг начинается здесь!
             Огромный выбор товаров для ремонта и строительства
             не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -351,11 +353,12 @@
               <li class="transport-companies__item">Автотрейдинг</li>
               <li class="transport-companies__item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="about-company__link more-info-link" href="#">Подробнее о компании</a>
+          </div>
+          <a class="about-company__link more-info-link" href="#">Подробнее о компании</a>
         </article>
 
         <section class="map-section">
-          <h2 class="map-section__title section-title">Контакты</h2>
+          <h3 class="map-section__title section-title">Контакты</h3>
           <p class="map-section__text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="map-section__map-link" href="https://yandex.ru/maps/?um=constructor%3Ae3f95bce20c42b025a2552811e1c8a6b291459077bd919de3261149e19a1d7eb&source=constructorLink" title="Кликните для перехода к интерактивной карте">
             <img src="img/map-picture.png" alt="Большая Конюшенная ул., д. 19/8" width="300" height="158">
@@ -371,7 +374,7 @@
     <div class="footer-top">
       <div class="footer-top__container container">
         <div class="footer-top__row">
-          <a class="site-footer__logo"><img src="img/site-logo-text.svg" alt="Логотип «Техномарта»" width="138" height="23"></a>
+          <a class="site-footer__logo"><img src="img/site-logo-big-text.svg" alt="Логотип «Техномарта»" width="138" height="23"></a>
           <ul class="site-footer__site-nav">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -383,7 +386,7 @@
         <div class="footer-top__row">
           <address class="site-footer__contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
+            <span class="site-footer__tel">+7 (812) 555-05-55</span>
           </address>
           <ul class="site-footer__products-nav">
             <li><a href="#">Материалы</a></li>

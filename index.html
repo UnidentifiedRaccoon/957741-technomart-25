@@ -89,7 +89,7 @@
             <a class="promo-item__link" href="#">На любой вкус</a>
           </li>
           <li class="promo__item promo-item tools">
-            <p class="promo-item__title">Инструменты</p>
+            <p class="promo-item__title">Инструмент</p>
             <a class="promo-item__link" href="#">На все случаи</a>
           </li>
           <li class="promo__item promo-item technique">
@@ -109,7 +109,7 @@
             <a class="promo-item__link" href="#">Бесплатно</a>
           </li>
         </ul>
-        <div class="promo__slider slider visually-hidden">
+        <div class="promo__slider slider">
           <ul class="slider__switches">
             <li class="slider__toggle">
               <input class="slider__input-radio" type="radio" name="toggles-group" value="toggle-1" id="slider-toggle-1" checked>
@@ -121,28 +121,27 @@
             </li>
           </ul>
           <ul class="slider__slides">
-            <li class="slider__slide slide">
-              <div class="slide__box">
-                <h3 class="slide__title">Перфораторы</h3>
-                <p class="slide__text">Настоящие мужские игрушки</p>
-                <img src="img/slide-1.jpg" alt="" width="620" height="266">
-              </div>
-            </li>
-            <li class="slider__slide slide">
+            <li class="slider__slide slide-1">
               <div class="slide__box">
                 <h3 class="slide__title">Дрели</h3>
                 <p class="slide__text">Соседям на радость!</p>
-                <img src="img/slide-2.jpg" alt="" width="620" height="266">
+                <a class="slider__link more-info-link" href="catalog.html">Открыть каталог</a>
+              </div>
+            </li>
+            <li class="slider__slide slide-2">
+              <div class="slide__box">
+                <h3 class="slide__title">Перфораторы</h3>
+                <p class="slide__text">Настоящие мужские игрушки</p>
+                <a class="slider__link more-info-link" href="catalog.html">Открыть каталог</a>
               </div>
             </li>
           </ul>
-          <button class="slider__btn slider__left-btn" type="button">
-            <span class="visually-hidden">Листать влево</span>
-          </button>
           <button class="slider__btn slider__right-btn" type="button">
             <span class="visually-hidden">Листать вправо</span>
           </button>
-          <a class="slider__link more-info-link" href="catalog.html">Открыть каталог</a>
+          <button class="slider__btn slider__left-btn" type="button">
+            <span class="visually-hidden">Листать влево</span>
+          </button>
         </div>
       </div>
     </section>
@@ -296,8 +295,8 @@
             </li>
           </ul>
           <ul class="services__list">
-            <li class="service">
-              <div class="service__box delivery">
+            <li class="service delivery">
+              <div class="service__box delivery__box">
                 <h3 class="service__title delivery__title">Доставка</h3>
                 <p class="service__text delivery__text">
                   Мы с удовольствием доставим ваш товар прямо<br>
@@ -307,10 +306,10 @@
                 </p>
               </div>
             </li>
-            <li class="service visually-hidden">
-              <div class="service__box guarantee">
-                <h3 class="service__title">Гаратия</h3>
-                <p class="service__text">Если купленный у нас товар поломается или заискрит,<br>
+            <li class="service guarantee visually-hidden">
+              <div class="service__box guarantee__box">
+                <h3 class="service__title guarantee__title">Гаратия</h3>
+                <p class="service__text guarantee__text">Если купленный у нас товар поломается или заискрит,<br>
                   а также в случае пожара, спровоцированного его возгаранием,
                   вы всегда можете быть уверены в нашей гарантии. Мы обменяем
                   сгоревший товар на новый.<br>
@@ -318,10 +317,10 @@
                 </p>
               </div>
             </li>
-            <li class="service visually-hidden">
-              <div class="service__box credit">
-                <h3 class="service__title">Кредит</h3>
-                <p class="service__text">
+            <li class="service credit visually-hidden">
+              <div class="service__box credit__box">
+                <h3 class="service__title credit__title">Кредит</h3>
+                <p class="service__text credit__text">
                   Залезть в долговую яму стало проще!<br>
                   Кредитные консультанты придут вам на помощь.
                 </p>
@@ -359,7 +358,7 @@
           <h2 class="map-section__title section-title">Контакты</h2>
           <p class="map-section__text">Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="map-section__map-link" href="https://yandex.ru/maps/?um=constructor%3Ae3f95bce20c42b025a2552811e1c8a6b291459077bd919de3261149e19a1d7eb&source=constructorLink" title="Кликните для перехода к интерактивной карте">
-            <img src="img/map-picture.png" alt="Большая Конюшенная ул., 19" width="300" height="158">
+            <img src="img/map-picture.png" alt="Большая Конюшенная ул., д. 19/8" width="300" height="158">
           </a>
           <a class="map-section__link more-info-link" href="#">Заблудились? Напишите нам!</a>
         </section>

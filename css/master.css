@@ -277,7 +277,7 @@ input[type="radio"].visually-hidden {
 
 .header-middle {
   padding-top: 45px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   width: 100%;
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
@@ -291,9 +291,7 @@ input[type="radio"].visually-hidden {
 .site-header__title {
   width: 205px;
   padding: 0;
-  margin: 0;
-  margin-right: 70px;
-  margin-left: 50px;
+  margin: 5px 60px 0 52px;;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -344,6 +342,7 @@ input[type="radio"].visually-hidden {
 
 .site-header__user-nav {
   margin: 0;
+  margin-top: 3px;
   padding: 0;
   display: flex;
   font-size: 21px;
@@ -578,9 +577,13 @@ input[type="radio"].visually-hidden {
 
 /* PROMO */
 .promo {
-  padding-bottom: 55px;
+  padding-bottom: 50px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
+}
+
+.promo__container {
+  position: relative;
 }
 
 .promo__list {
@@ -632,7 +635,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 135px;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 9px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -733,8 +736,51 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.promo__slider {
+  position: absolute;
+  top: 127px;
+  left: -30px;
+}
+
 .slider__switches {
+  position: absolute;
+  top: 220px;
+  left: 293px;
+  display: flex;
   list-style: none;
+  z-index: 10;
+}
+
+.slider__toggle {
+    margin-right: 10px;
+}
+
+
+
+
+.slider__btn {
+  position: absolute;
+  top: 135px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-left: none;
+  border-bottom: none;
+
+  z-index: 10;
+}
+
+.slider__left-btn {
+  left: 70px;
+  transform: rotate(-135deg);
+}
+
+.slider__right-btn {
+  left: 600px;
+  transform: rotate(45deg);
 }
 
 .slider__slides {
@@ -743,20 +789,44 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.slider__slide {
+  position: absolute;
+  padding: 22px 10px 22px 24px;
+}
+
+.slide-1 {
+  width: 620px;
+  height: 266px;
+  background-image: url("../img/slide-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slide-2 {
+  width: 620px;
+  height: 266px;
+  background-image: url("../img/slide-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .slide__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
-  background-color: rgba(255, 0, 0, 0.25);
-  /* убрать */
+  text-transform: uppercase;
 }
 
 .slide__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 130px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  background-color: rgba(255, 0, 0, 0.25);
-  /* убрать */
 }
 
 /* PRODUCTS */
@@ -865,7 +935,7 @@ input[type="radio"].visually-hidden {
 }
 
 .products-item__old-price {
-  margin: 0 30px 7px 30px;
+  margin: 0 30px 9px 30px;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -878,7 +948,7 @@ input[type="radio"].visually-hidden {
 
 .products-item__price {
   position: relative;
-  margin: 0 30px 20px 30px;
+  margin: 0 35px 20px 40px;
   padding: 11px 0 11px 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -972,7 +1042,7 @@ input[type="radio"].visually-hidden {
 
 /* BRANDS */
 .popular-brands {
-  padding-bottom: 85px;
+  padding-bottom: 65px;
 }
 
 .popular-brands__head-box {
@@ -1056,9 +1126,8 @@ input[type="radio"].visually-hidden {
 
 /* SERVICES */
 .services {
-  min-height: 522px;
-  /**/
-  /*временно для удобства*/
+  padding-top: 65px;
+  padding-bottom: 25px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1069,10 +1138,13 @@ input[type="radio"].visually-hidden {
 
 .services__title {
   color: #000000;
+  margin-bottom: 25px;
 }
 
 .services__text {
-  margin-bottom: 70px;
+  margin: 0;
+    margin-bottom: 70px;
+  padding: 0;
   /*временно для удобства*/
   width: 400px;
   /*временно для удобства*/
@@ -1084,10 +1156,27 @@ input[type="radio"].visually-hidden {
 }
 
 .services__switches {
+  position: relative;
   margin: 0;
   margin-right: 80px;
   padding: 0;
+  padding-bottom: 70px;
   list-style: none;
+}
+
+.services__switches::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: 0;
+
+  width: 10px;
+  height: 280px;
+
+  background-image: url("../img/services-shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .switch {
@@ -1096,8 +1185,14 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
-  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
-  background-color: #32425c;
+}
+
+.switch__label {
+  display: block;
+  box-sizing: border-box;
+  padding: 15px 21px 18px 21px;
+  width: 240px;
+    background-color: #32425c;
 }
 
 .switch__label:hover {
@@ -1110,23 +1205,70 @@ input[type="radio"].visually-hidden {
 }
 
 .services__list {
+  margin: 0;
+  padding: 0;
+  width: 620px;
   list-style: none;
 }
 
+.service {
+  box-sizing: border-box;
+  padding-bottom: 25px;
+  width: 100%;
+  height: 100%
+}
+
+.services__list .delivery {
+  background-image: url("../img/delivery-picture.png");
+  background-repeat: no-repeat;
+  background-position: right 25px;
+}
+
+.guarantee {
+  background-image: url("../img/guarantee-picture.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.credit {
+  background-image: url("../img/credit-picture.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 .service__title {
-  margin-top: 0px;
-  /*временно для удобства*/
+  margin: 0;
+  margin-bottom: 25px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  text-transform: uppercase;
   color: #32425c;
+}
+
+.service__text {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.delivery__box {
+  width: 275px;
+}
+
+.guarantee__box {
+  width: 380px;
+}
+
+.credit__box {
+  width: 280px;
 }
 
 /* COMPANY-INFO */
 .company-info {
   padding-top: 80px;
-  padding-bottom: 75px;
+  padding-bottom: 85px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1151,7 +1293,7 @@ input[type="radio"].visually-hidden {
 
 .about-company__list {
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   padding: 0;
   list-style: none;
 }
@@ -1163,7 +1305,7 @@ input[type="radio"].visually-hidden {
 
 .transport-companies__item {
   position: relative;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   padding-left: 36px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
@@ -1196,7 +1338,7 @@ input[type="radio"].visually-hidden {
 
 .map-section__text {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   width: 180px;
 }
 
@@ -1213,7 +1355,7 @@ input[type="radio"].visually-hidden {
 
 /* CATALOG.html */
 .site-content__catalog {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .catalog-container__top-wrap {
@@ -1925,6 +2067,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
   border-top: 7px solid #ee3643;
   background-color: #ffffff;
+
+  z-index: 100;
 }
 
 .modal__container {
@@ -1974,11 +2118,16 @@ input[type="radio"].visually-hidden {
 /* window big map */
 .window-big-map {
   position: absolute;
-  top: 2080px;
+  top: 2060px;
   left: 50%;
   margin-left: -470px;
+  width: 940px;
+  height: 445px;
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
   background-color: #565656;
+  background-image: url("../img/big-map-picture.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .window-big-map .modal-close {
@@ -1988,7 +2137,7 @@ input[type="radio"].visually-hidden {
 
 /* WRITE-US */
 .write-us {
-  top: 290px;
+  top: 20%;
   left: 50%;
   margin-left: -310px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
@@ -2069,7 +2218,7 @@ input[type="radio"].visually-hidden {
 
 /* ADD-TO-BASKET*/
 .add-to-basket {
-  top: 410px;
+  top: 30%;
   left: 50%;
   margin-left: -310px;
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);

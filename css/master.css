@@ -114,6 +114,12 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
+a.index__logo:hover,
+a.index__logo:focus,
+a.index__logo:active {
+    background-color: #ee3643;
+}
+
 .site-header__logo img {
   margin-top: 13px;
   margin-left: 55px
@@ -445,6 +451,7 @@ input[type="radio"].visually-hidden {
   padding-left: 34px;
 }
 
+
 .site-header__site-nav a:hover,
 .site-header__site-nav a:focus {
   background-color: #293449;
@@ -453,6 +460,16 @@ input[type="radio"].visually-hidden {
 .site-header__site-nav a:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
+}
+
+a.site-nav__current-link,
+a.site-nav__current-link:hover,
+a.site-nav__current-link:focus,
+a.site-nav__current-link:active {
+  color: #ffffff;
+  background-color: #32425c;
+  box-shadow: inset 0 -5px 0 0 #293449;
+  cursor: pointer;
 }
 
 /* catalog.html */
@@ -1421,6 +1438,10 @@ input[type="radio"].visually-hidden {
   background-position: center center;
 }
 
+.breadcrumbs__current {
+  cursor: pointer;
+}
+
 .page-title {
   margin: 0;
   margin-bottom: 10px;
@@ -1730,6 +1751,15 @@ input[type="radio"].visually-hidden {
   border-bottom: none;
 }
 
+.sorting-box__get-link_active,
+.sorting-box__get-link_active:hover,
+.sorting-box__get-link_active:focus,
+.sorting-box__get-link_active:active {
+  color: #ee3643;
+  border-bottom: none;
+  cursor: pointer;
+}
+
 .sorting-box__increase-link,
 .sorting-box__decrease-link {
   display: block;
@@ -1740,30 +1770,29 @@ input[type="radio"].visually-hidden {
   border-bottom: none;
 }
 
-.sorting-box__increase-link svg path {
-  fill: #c5c5c5;
-}
-
-.sorting-box__increase-link:hover svg path,
-.sorting-box__increase-link:focus svg path {
-  fill: #000000;
-}
-
-.sorting-box__increase-link:active svg path {
-  fill: #ee3643;
-}
-
+.sorting-box__increase-link svg path,
 .sorting-box__decrease-link svg path {
   fill: #c5c5c5;
 }
 
+.sorting-box__increase-link:hover svg path,
+.sorting-box__increase-link:focus svg path,
 .sorting-box__decrease-link:hover svg path,
 .sorting-box__decrease-link:focus svg path {
   fill: #000000;
 }
 
+.sorting-box__increase-link:active svg path,
 .sorting-box__decrease-link:active svg path {
   fill: #ee3643;
+}
+
+.sorting-box__arrow-current svg path,
+.sorting-box__arrow-current:hover svg path,
+.sorting-box__arrow-current:focus svg path,
+.sorting-box__arrow-current:active svg path {
+    fill: #ee3643;
+    cursor: pointer;
 }
 
 .products__list {
@@ -1826,10 +1855,14 @@ input[type="radio"].visually-hidden {
   border: 1px solid #ee3643;
 }
 
-.pagination__link-current {
+.pagination__link-current,
+.pagination__link-current:hover,
+.pagination__link-current:focus,
+.pagination__link-current:active {
   color: #ffffff;
   background-color: #ee3643;
   border: none;
+  cursor: pointer;
 }
 
 /* ABOUT-PERFORATORS*/
@@ -1899,6 +1932,12 @@ input[type="radio"].visually-hidden {
 .site-footer__logo:active {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ba2732;
+}
+
+a.index__logo:hover,
+a.index__logo:focus,
+a.index__logo:active {
+    background-color: #ee3643;
 }
 
 .site-footer__site-nav {

@@ -5,26 +5,22 @@
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/master.css">
-  <script src="http://localhost:35729/livereload.js">
-  </script>
 </head>
 
-<body>
+<body class="page">
   <header class="site-header">
     <div class="header-top">
       <div class="header-top__container container">
         <a class="site-header__logo"><img src="img/site-logo-text.svg" alt="Логотип «Техномарта»" width="109" height="19"></a>
         <form class="site-header__form" action="https://echo.htmlacademy.ru" method="get">
-
-          <input class="site-header__search-input" type="text" name="search" id="search-field" placeholder="Поиск:">
+          <input class="site-header__search-input" type="text" name="search" id="search-field" placeholder="Поиск:" aria-label="Поиск">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
             <path fill="#231F20"
               d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
           </svg>
-          <!-- <button type="submit" name="button"><span class="visually-hidden">Найти</span></button> -->
         </form>
         <p class="site-header__buy-links">
           <a class="main-bookmarks-btn" href="#">Закладки: 0</a>
@@ -122,25 +118,25 @@
             </li>
           </ul>
           <ul class="slider__slides">
-            <li class="slider__slide slide-1">
+            <li class="slider__slide slide-1 slide_active">
               <div class="slide__box">
                 <h3 class="slide__title">Дрели</h3>
                 <p class="slide__text">Соседям на радость!</p>
-                <a class="slider__link more-info-link" href="catalog.html">Открыть каталог</a>
+                <a class="slide__link more-info-link" href="catalog.html">Открыть каталог</a>
               </div>
             </li>
             <li class="slider__slide slide-2">
               <div class="slide__box">
                 <h3 class="slide__title">Перфораторы</h3>
                 <p class="slide__text">Настоящие мужские игрушки</p>
-                <a class="slider__link more-info-link" href="catalog.html">Открыть каталог</a>
+                <a class="slide__link more-info-link" href="catalog.html">Открыть каталог</a>
               </div>
             </li>
           </ul>
-          <button class="slider__btn slider__right-btn" type="button">
+          <button class="slider__btn slider__right-btn" type="button" tabindex="0">
             <span class="visually-hidden">Листать вправо</span>
           </button>
-          <button class="slider__btn slider__left-btn" type="button">
+          <button class="slider__btn slider__left-btn" type="button" tabindex="0">
             <span class="visually-hidden">Листать влево</span>
           </button>
         </div>
@@ -296,7 +292,7 @@
             </li>
           </ul>
           <ul class="services__list">
-            <li class="service delivery">
+            <li class="service delivery service_active">
               <div class="service__box delivery__box">
                 <h3 class="service__title delivery__title">Доставка</h3>
                 <p class="service__text delivery__text">
@@ -419,7 +415,7 @@
           <a class="site-footer__htmlacademy-link" href="#">mail@htmlacademy.ru</a>
         </p>
         <p class="site-footer__copyright">
-          <span>Разработанно:</span>
+          <span>Разработано &mdash;</span>
           <a class="site-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
@@ -429,8 +425,7 @@
 
   <section class="window-big-map" hidden>
     <h2 class="visually-hidden">Интерактивная карта</h2>
-    <script type="text/javascript" charset="utf-8" async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3f95bce20c42b025a2552811e1c8a6b291459077bd919de3261149e19a1d7eb&amp;width=940&amp;height=446&amp;lang=ru_RU&amp;scroll=true"></script>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CCGkmEjJ" width="940" height="445"></iframe>
     <button class="modal-close" type="button" name="close-button" title="Скрыть карту">
       <span class="visually-hidden">Закрыть</span>
     </button>
@@ -458,15 +453,15 @@
       <div class="modal__container write-us__container">
         <p class="appointment-item">
           <label for="user-name-field">Ваше имя:</label>
-          <input class="write-us__field write-us__user-name" type="text" name="user-name" id="user-name-field" placeholder="Имя Фамилия" required>
+          <input class="write-us__field write-us__user-name" type="text" name="user-name" id="user-name-field" placeholder="Имя Фамилия">
         </p>
         <p class="appointment-item">
           <label for="user-email-field">Ваш e-mail:</label>
-          <input class="write-us__field write-us__user-email" type="email" name="user-email" id="user-email-field" placeholder="email@example.com" required>
+          <input class="write-us__field write-us__user-email" type="email" name="user-email" id="user-email-field" placeholder="email@example.com">
         </p>
         <p class="appointment-item-big">
           <label for="user-message-field">Текст письма:</label>
-          <textarea class="write-us__field write-us__user-message" name="user-message" id="user-message-field" placeholder="В свободной форме" rows="5" cols="80" required></textarea>
+          <textarea class="write-us__field write-us__user-message" name="user-message" id="user-message-field" placeholder="В свободной форме" rows="5" cols="80"></textarea>
         </p>
       </div>
       <div class="modal__bottom-background">
@@ -480,6 +475,9 @@
     </button>
   </section>
 
+<script src="prog.js">
+
+</script>
 </body>
 
 </html>

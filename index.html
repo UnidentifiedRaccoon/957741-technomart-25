@@ -80,39 +80,40 @@
         <h2 class="visually-hidden">Промо раздел</h2>
         <ul class="promo__list">
           <li class="promo__item promo-item materials">
+            <div class="promo-item__flag promo-item__flag-new"><span class="visually-hidden">новинка</span></div>
             <p class="promo-item__title">Материалы</p>
             <a class="promo-item__link" href="#">На любой вкус</a>
           </li>
           <li class="promo__item promo-item tools">
+            <div class="promo-item__flag"><span class="visually-hidden">новинка</span></div>
             <p class="promo-item__title">Инструмент</p>
             <a class="promo-item__link" href="#">На все случаи</a>
           </li>
           <li class="promo__item promo-item technique">
+            <div class="promo-item__flag"><span class="visually-hidden">новинка</span></div>
             <p class="promo-item__title">Техника</p>
             <a class="promo-item__link" href="#">Для стройки</a>
           </li>
           <li class="promo__item promo-item filler"></li>
           <li class="promo__item promo-item filler"></li>
           <li class="promo__item promo-item sale">
+            <div class="promo-item__flag"><span class="visually-hidden">новинка</span></div>
             <p class="promo-item__title">Скидки 50%</p>
             <a class="promo-item__link" href="#">На 350 товаров</a>
           </li>
           <li class="promo__item promo-item filler"></li>
           <li class="promo__item promo-item filler"></li>
           <li class="promo__item promo-item delivery">
+            <div class="promo-item__flag"><span class="visually-hidden">новинка</span></div>
             <p class="promo-item__title">Доставка</p>
             <a class="promo-item__link" href="#">Бесплатно</a>
           </li>
         </ul>
         <div class="promo__slider slider">
           <ul class="slider__switches">
-            <li class="slider__toggle">
-              <input class="slider__input-radio" type="radio" name="toggles-group" value="toggle-1" id="slider-toggle-1" checked>
-              <label class="slider__label visually-hidden" for="slider-toggle-1">Первый слайд</label>
+            <li class="slider__toggle  slider__toggle_active" onclick="goToChosenSlide(1)">
             </li>
-            <li class="slider__toggle">
-              <input class="slider__input-radio" type="radio" name="toggles-group" value="toggle-2" id="slider-toggle-2">
-              <label class="slider__label visually-hidden" for="slider-toggle-2">Второй слайд</label>
+            <li class="slider__toggle" onclick="goToChosenSlide(2)">
             </li>
           </ul>
           <ul class="slider__slides">
@@ -133,11 +134,11 @@
               </div>
             </li>
           </ul>
-          <button class="slider__btn slider__right-btn" type="button" tabindex="0">
-            <span class="visually-hidden">Листать вправо</span>
+          <button class="slider__btn slider__next-btn" type="button" tabindex="0" onclick="goToNextSlide()">
+            <span class="visually-hidden">Следующий слайд</span>
           </button>
-          <button class="slider__btn slider__left-btn" type="button" tabindex="0">
-            <span class="visually-hidden">Листать влево</span>
+          <button class="slider__btn slider__previous-btn" type="button" tabindex="0" onclick="goToPreviousSlide()">
+            <span class="visually-hidden">Предыдущий слайд</span>
           </button>
         </div>
       </div>
@@ -287,16 +288,13 @@
         <div class="service__container">
           <ul class="services__switches">
             <li class="services__switch switch">
-              <input class="visually-hidden switch__input" type="radio" name="switch-group" value="delivery" id="switch-delivery" checked>
-              <label class="switch__label" for="switch-delivery">Доставка</label>
+              <button class="switch__button switch__button_active" type="button" name="delivery-button" onclick="goToChosenService(1)">Доставка</button>
             </li>
             <li class="services__switch switch">
-              <input class="visually-hidden switch__input" type="radio" name="switch-group" value="guarantee" id="switch-guarantee">
-              <label class="switch__label" for="switch-guarantee">Гарантия</label>
+              <button class="switch__button" type="button" name="guarantee-button" onclick="goToChosenService(2)">Гарантия</button>
             </li>
             <li class="services__switch switch">
-              <input class="visually-hidden switch__input" type="radio" name="switch-group" value="credit" id="switch-credit">
-              <label class="switch__label" for="switch-credit">Кредит</label>
+              <button class="switch__button" type="button" name="credit-button" onclick="goToChosenService(3)">Кредит</button>
             </li>
           </ul>
           <ul class="services__list">
@@ -311,7 +309,7 @@
                 </p>
               </div>
             </li>
-            <li class="service guarantee visually-hidden">
+            <li class="service guarantee">
               <div class="service__box guarantee__box">
                 <h3 class="service__title guarantee__title">Гаратия</h3>
                 <p class="service__text guarantee__text">Если купленный у нас товар поломается или заискрит,<br>
@@ -322,7 +320,7 @@
                 </p>
               </div>
             </li>
-            <li class="service credit visually-hidden">
+            <li class="service credit">
               <div class="service__box credit__box">
                 <h3 class="service__title credit__title">Кредит</h3>
                 <p class="service__text credit__text">
@@ -378,7 +376,7 @@
     <div class="footer-top">
       <div class="footer-top__container container">
         <div class="footer-top__row">
-          <a class="site-footer__logo index__logo"><img src="img/site-logo-big-text.svg" alt="Логотип «Техномарта»" width="138" height="23"></a>
+          <a class="site-footer__logo"><img src="img/site-logo-big-text.svg" alt="Логотип «Техномарта»" width="138" height="23"></a>
           <ul class="site-footer__site-nav">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
